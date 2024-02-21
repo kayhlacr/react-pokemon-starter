@@ -1,8 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export default function PokemonCard({ name, icon, typeIcon }) {
+export default function PokemonCard({ name, icon, typeIcon, onClickHandler }) {
   return (
-    <div className="pokemon-card">
+    <div className="pokemon-card" onClick={onClickHandler}>
       <div className="image-container">
         <img src={icon} alt={name} className="pokemon-image" />
       </div>
@@ -13,3 +14,9 @@ export default function PokemonCard({ name, icon, typeIcon }) {
     </div>
   );
 }
+PokemonCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  typeIcon: PropTypes.string.isRequired,
+  onClickHandler: PropTypes.func.isRequired,
+};

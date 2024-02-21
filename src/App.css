@@ -90,3 +90,29 @@ body {
 .pokemon-card:hover .type-icon {
   transform: rotate(360deg); /* Rotate the type icon on card hover */
 }
+
+.pokemon-details {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.pokemon-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pokemon-details img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.pokemon-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
