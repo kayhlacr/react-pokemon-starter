@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 const PokemonDetails = ({ name, picture, typeIcon, description }) => {
